@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+c7c283d22d47bd76945bfd26ae14ccaf CMakeFiles/moments.desktop
+070482bad959e4d3e12f4d0e238f08c3 plugins/Fileutils/CMakeFiles/Fileutils_automoc
+48894b8a1856f51d9982583e54f53355 po/CMakeFiles/moments.fulvio.pot
