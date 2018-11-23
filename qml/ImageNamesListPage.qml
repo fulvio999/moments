@@ -31,12 +31,12 @@ Page {
 
     Component {
         id: imageZoomDialogue
-        ImageZoomDialog{targetImageName:Fileutils.getHomePath()+"/"+root.imagesSavingRootPath+"/moments/"+imageListManagerPage.title+"/images/"+imageListManagerPage.targetImageName}
+        ImageZoomDialog{targetImagePath:Fileutils.getHomePath()+"/"+root.imagesSavingRootPath+"/moments/"+imageListManagerPage.momentTitle+"/images/"+imageListManagerPage.targetImageName; imageName: imageListManagerPage.targetImageName}
     }
 
     Component {
         id: removeImageDialog
-        RemoveImageDialog{targetImageName:Fileutils.getHomePath()+"/"+root.imagesSavingRootPath+"/moments/"+imageListManagerPage.title+"/images/"+imageListManagerPage.targetImageName; targetMomentId: imageListManagerPage.id; imageListModelIndex: imageListManagerPage.imageListModelIndex}
+        RemoveImageDialog{targetImagePath:Fileutils.getHomePath()+"/"+root.imagesSavingRootPath+"/moments/"+imageListManagerPage.momentTitle+"/images/"+imageListManagerPage.targetImageName; imageListModelIndex: imageListManagerPage.imageListModelIndex}
     }
 
     header: PageHeader {

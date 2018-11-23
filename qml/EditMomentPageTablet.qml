@@ -112,6 +112,7 @@ Page{
                     id: momentTitleField
                     text: editMomentPage.title
                     echoMode: TextInput.Normal
+                    inputMethodHints: Qt.ImhNoPredictiveText | Qt.ImhNoAutoUppercase
                     readOnly: false
                     width: units.gu(50)
                 }
@@ -132,6 +133,7 @@ Page{
                       width: units.gu(50)
                       height: units.gu(18)
                       textFormat:TextEdit.RichText
+                      inputMethodHints: Qt.ImhNoPredictiveText | Qt.ImhNoAutoUppercase
                       text: editMomentPage.description
                       readOnly: false
                   }
@@ -151,6 +153,7 @@ Page{
                         id: momentLocationField
                         text: editMomentPage.location
                         echoMode: TextInput.Normal
+                        inputMethodHints: Qt.ImhNoPredictiveText | Qt.ImhNoAutoUppercase
                         readOnly: false
                         width: units.gu(50)
                     }
@@ -234,6 +237,7 @@ Page{
                         text: editMomentPage.tags
                         placeholderText: i18n.tr("comma separated list")
                         echoMode: TextInput.Normal
+                        inputMethodHints: Qt.ImhNoPredictiveText | Qt.ImhNoAutoUppercase
                         readOnly: false
                         width: units.gu(50)
                  }

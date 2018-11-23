@@ -92,6 +92,7 @@ Page {
                     text: ""
                     placeholderText: ""
                     echoMode: TextInput.Normal
+                    inputMethodHints: Qt.ImhNoPredictiveText | Qt.ImhNoAutoUppercase
                     readOnly: false
                     width: units.gu(33)
                 }
@@ -112,6 +113,7 @@ Page {
                       width: units.gu(33)
                       height: units.gu(15)
                       textFormat:TextEdit.RichText
+                      inputMethodHints: Qt.ImhNoPredictiveText | Qt.ImhNoAutoUppercase
                       readOnly: false
                   }
              }
@@ -131,6 +133,7 @@ Page {
                         text: ""
                         placeholderText: ""
                         echoMode: TextInput.Normal
+                        inputMethodHints: Qt.ImhNoPredictiveText | Qt.ImhNoAutoUppercase
                         readOnly: false
                         width: units.gu(33)
                     }
@@ -212,8 +215,8 @@ Page {
              }
 
              Row{
-                anchors.left : parent.left
-                spacing: units.gu(6)
+                 anchors.left : parent.left
+                 spacing: units.gu(6)
 
                  Label {
                       id: momentTagLabel
@@ -226,6 +229,7 @@ Page {
                         text: ""
                         placeholderText: i18n.tr("comma separated list")
                         echoMode: TextInput.Normal
+                        inputMethodHints: Qt.ImhNoPredictiveText | Qt.ImhNoAutoUppercase
                         readOnly: false
                         width: units.gu(33)
                   }
@@ -241,22 +245,22 @@ Page {
                         width: units.gu(20)
                         onClicked: {
 
-                          if(ValidationUtils.isInputTextEmpty(momentTitleField.text) || ValidationUtils.hasSpecialChar(momentTitleField.text))
-                          {
-                             PopupUtils.open(missingRequiredFieldDialogue)
+                            if(ValidationUtils.isInputTextEmpty(momentTitleField.text) || ValidationUtils.hasSpecialChar(momentTitleField.text))
+                            {
+                               PopupUtils.open(missingRequiredFieldDialogue)
 
-                          } else if (Storage.isMomentDuplicated(momentTitleField.text))
-                          {
-                             PopupUtils.open(duplicatedTitleMomentDialogue)
-                          } else {
-                             /* necessary to set the copy destination path for ContentHub */
-                             root.targetMomentTitle = momentTitleField.text
+                            } else if (Storage.isMomentDuplicated(momentTitleField.text))
+                            {
+                               PopupUtils.open(duplicatedTitleMomentDialogue)
+                            } else {
+                               /* necessary to set the copy destination path for ContentHub */
+                               root.targetMomentTitle = momentTitleField.text
 
-                             Storage.insertMoment(momentDateButton.text, momentDescriptionField.text, momentLocationField.text, momentTitleField.text, momentTagsField.text);
-                             Storage.getAllMomentsAndFillModel(); /* refresh moments list */
+                               Storage.insertMoment(momentDateButton.text, momentDescriptionField.text, momentLocationField.text, momentTitleField.text, momentTagsField.text);
+                               Storage.getAllMomentsAndFillModel(); /* refresh moments list */
 
-                             PopupUtils.open(successAddingMomentDialogue);
-                          }
+                               PopupUtils.open(successAddingMomentDialogue);
+                            }
                         }
                     }
                }

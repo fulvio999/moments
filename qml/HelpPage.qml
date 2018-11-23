@@ -46,7 +46,7 @@ Page {
                 textFormat:TextEdit.RichText
                 text: i18n.tr("With Moments you can group your pictures, images by Moments, periods of you life")+"<br>"+
                 i18n.tr("(Example: marriage, holidays, party).")+"<br><br"+
-                i18n.tr("Note: the images used must be placed on the local device, not on remote sources")+"<br>"+
+                i18n.tr("Note: the images imported must be placed on the local device, not on remote sources")+"<br><br>"+
                 i18n.tr("When an image is deleted, is removed the one managed by the App, NOT other copy in the device filesystem (if any)")
                 readOnly: true
             }

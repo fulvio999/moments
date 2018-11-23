@@ -18,7 +18,7 @@ import "./dialog"
    Add a new Moment TABLET version
 */
 Page {
-    id: addNewMomentPage  
+    id: addNewMomentPage
 
     /* custom signal emitted by OperationResultDialog Componet to notify that user has pressed "Close" button */
     signal operationResultDialogClosed()
@@ -92,6 +92,7 @@ Page {
                     text: ""
                     placeholderText: ""
                     echoMode: TextInput.Normal
+                    inputMethodHints: Qt.ImhNoPredictiveText | Qt.ImhNoAutoUppercase
                     readOnly: false
                     width: units.gu(50)
                 }
@@ -112,6 +113,7 @@ Page {
                       width: units.gu(50)
                       height: units.gu(18)
                       textFormat:TextEdit.RichText
+                      inputMethodHints: Qt.ImhNoPredictiveText | Qt.ImhNoAutoUppercase
                       readOnly: false
                   }
              }
@@ -131,6 +133,7 @@ Page {
                         text: ""
                         placeholderText: ""
                         echoMode: TextInput.Normal
+                        inputMethodHints: Qt.ImhNoPredictiveText | Qt.ImhNoAutoUppercase
                         readOnly: false
                         width: units.gu(50)
                     }
@@ -227,6 +230,7 @@ Page {
                         text: ""
                         placeholderText: i18n.tr("comma separated list")
                         echoMode: TextInput.Normal
+                        inputMethodHints: Qt.ImhNoPredictiveText | Qt.ImhNoAutoUppercase
                         readOnly: false
                         width: units.gu(50)
                   }
@@ -236,28 +240,28 @@ Page {
                    anchors.horizontalCenter: parent.horizontalCenter
 
                    Button {
-                        id: addMomentButton
-                        objectName: "Add"
-                        text: i18n.tr("Add")
-                        width: units.gu(20)
-                        onClicked: {
+                         id: addMomentButton
+                         objectName: "Add"
+                         text: i18n.tr("Add")
+                         width: units.gu(20)
+                         onClicked: {
 
-                          if(ValidationUtils.isInputTextEmpty(momentTitleField.text) || ValidationUtils.hasSpecialChar(momentTitleField.text))
-                          {
-                             PopupUtils.open(missingRequiredFieldDialogue)
+                            if(ValidationUtils.isInputTextEmpty(momentTitleField.text) || ValidationUtils.hasSpecialChar(momentTitleField.text))
+                            {
+                               PopupUtils.open(missingRequiredFieldDialogue)
 
-                          } else if (Storage.isMomentDuplicated(momentTitleField.text))
-                          {
-                             PopupUtils.open(duplicatedTitleMomentDialogue)
-                          } else {
-                             /* necessary to set the copy destination path for ContentHub */
-                             root.targetMomentTitle = momentTitleField.text
+                            } else if (Storage.isMomentDuplicated(momentTitleField.text))
+                            {
+                               PopupUtils.open(duplicatedTitleMomentDialogue)
+                            } else {
+                               /* necessary to set the copy destination path for ContentHub */
+                               root.targetMomentTitle = momentTitleField.text
 
-                             Storage.insertMoment(momentDateButton.text, momentDescriptionField.text, momentLocationField.text, momentTitleField.text, momentTagsField.text);
-                             Storage.getAllMomentsAndFillModel(); /* refresh moments list */
+                               Storage.insertMoment(momentDateButton.text, momentDescriptionField.text, momentLocationField.text, momentTitleField.text, momentTagsField.text);
+                               Storage.getAllMomentsAndFillModel(); /* refresh moments list */
 
-                             PopupUtils.open(successAddingMomentDialogue);
-                          }
+                               PopupUtils.open(successAddingMomentDialogue);
+                            }
                         }
                     }
                }
