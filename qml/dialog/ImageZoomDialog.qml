@@ -28,7 +28,8 @@ Dialog {
                 source: targetImagePath
                 width: parent.width
                 height: parent.height
-                fillMode: Image.PreserveAspectFit
+                //fillMode: Image.PreserveAspectFit
+                fillMode: Image.PreserveAspectCrop
             }
 
             MouseArea {
