@@ -9,13 +9,16 @@ import "../js/Storage.js" as Storage
 
 
 /*
-   Show a Dialog where the user can choose to delete the selected Moment
+   Show a Dialog where the user can choose to delete the selected Moment:
+   - delete moment info in the database
+   - delete moment images
 */
 Dialog {
     id: momentDeleteDialog
 
-    /* the moment to delete */
+    /* info about the moment to delete */
     property string momentId;
+    property string momentTitle;
 
     text: "<b>"+ i18n.tr("Remove the Moment")+" ?"+"<br/>"+i18n.tr("(there is no restore)")+"</b>"
 
@@ -58,12 +61,13 @@ Dialog {
                         color: UbuntuColors.red
                         onClicked: {
                             loadingPageActivity.running = true
+
+                            var momentFolder = Fileutils.getHomePath()+"/"+root.imagesSavingRootPath+"/moments/"+momentDeleteDialog.momentTitle;
+                            console.log("Deleting moment with id:"+momentId+ " with folder: "+momentFolder);
+
                             Storage.deleteMoment(momentId);
-
-                            var momentFolder = Fileutils.getHomePath()+"/"+root.imagesSavingRootPath+"/moments/"+momentDeleteDialog.momentId;
-                            console.log("Deleting moment with id:"+momentId+ " with folder: "+momentFolder)
-
                             Fileutils.deleteMomentFolder(momentFolder);
+
                             Storage.getAllMomentsAndFillModel();
 
                             deleteOperationResult.text = i18n.tr("Succesfully removed Moment")

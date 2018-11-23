@@ -46,7 +46,7 @@ ListItem {
                    //var imagePath = Fileutils.getHomePath()+"/"+root.imagesSavingRootPath+"/moments/"+imageListManagerPage.id+"/images/"+imageToDelete;
 
 
-  PopupUtils.open(removeImageDialog)
+                   PopupUtils.open(removeImageDialog)
 
 
                    //console.log("Removing image: "+imagePath);

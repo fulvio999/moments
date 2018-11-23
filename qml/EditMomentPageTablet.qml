@@ -43,7 +43,7 @@ Page{
 
     Component {
         id: momentDeleteDialog
-        MomentDeleteDialog{momentId:editMomentPage.id}
+        MomentDeleteDialog{momentId:editMomentPage.id; momentTitle:editMomentPage.title}
     }
 
     header: PageHeader {

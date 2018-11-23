@@ -8,14 +8,12 @@ import QtQuick.LocalStorage 2.0
 import "../js/Storage.js" as Storage
 
 /*
-    Show a confirm Dialog where the user can choose if unbind the selected image from the Moment
-    NOTE: on filesystem the image remains
+    Show a confirm Dialog where the user can choose if delete the selected image from the filesystem
  */
 Dialog {
     id: confirmDeleteImageDialog
 
-    property string targetImageName; //full path
-    property string targetMomentId;
+    property string targetImagePath; //path with image name
     property string imageListModelIndex;
 
     text: "<b>"+ i18n.tr("Remove the Image")+" ?"+"<br/></b>"
@@ -48,10 +46,9 @@ Dialog {
                         text: i18n.tr("Remove")
                         color: UbuntuColors.red
                         onClicked: {
-                             //var imagePath = Fileutils.getHomePath()+"/"+root.imagesSavingRootPath+"/moments/"+targetMomentTitle+"/images/"+targetImageName;
-                             console.log("Removing image: "+targetImageName);
+                             console.log("Removing image: "+targetImagePath);
 
-                             Fileutils.removeImage(targetImageName);
+                             Fileutils.removeImage(targetImagePath);
                              momentsImagesListModel.remove(imageListModelIndex);
 
                              deleteOperationResult.text = i18n.tr("Image successfully removed")

@@ -24,7 +24,7 @@ Page {
      property string id;
      property string title;
 
-     /* info for currently selected image in the GridView: updated each time user select an image */
+     /* info about selected image in the GridView, used in delete/zoom Dialog */
      property string targetImageName;
      property string targetMomentId;
      property string imageListModelIndex;
@@ -35,12 +35,12 @@ Page {
 
      Component {
          id: imageZoomtDialogue
-         ImageZoomDialog{targetImageName:Fileutils.getHomePath()+"/"+root.imagesSavingRootPath+"/moments/"+showImagesPage.title+"/images/"+showImagesPage.targetImageName}
+         ImageZoomDialog{targetImagePath:Fileutils.getHomePath()+"/"+root.imagesSavingRootPath+"/moments/"+showImagesPage.title+"/images/"+showImagesPage.targetImageName; imageName: showImagesPage.targetImageName}
      }
 
      Component {
          id: removeImageDialog
-         RemoveImageDialog{targetImageName:Fileutils.getHomePath()+"/"+root.imagesSavingRootPath+"/moments/"+showImagesPage.title+"/images/"+showImagesPage.targetImageName; targetMomentId: showImagesPage.id; imageListModelIndex: showImagesPage.imageListModelIndex}
+         RemoveImageDialog{targetImagePath:Fileutils.getHomePath()+"/"+root.imagesSavingRootPath+"/moments/"+showImagesPage.title+"/images/"+showImagesPage.targetImageName; imageListModelIndex: showImagesPage.imageListModelIndex}
      }
 
      /* filled with the image names/path associated with the moment */

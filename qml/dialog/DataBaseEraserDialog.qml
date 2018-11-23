@@ -1,7 +1,7 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.3
 import Ubuntu.Components.Popups 1.3
-
+/* custom plugin */
 import Fileutils 1.0
 
 import QtQuick.LocalStorage 2.0
@@ -58,7 +58,9 @@ Dialog {
 
                             /* refresh */
                             Storage.getAllMomentsAndFillModel();
-TOGLIERE pagina con miniature !!
+                            /* removing primary page only the child pages will be removed */
+                            adaptivePageLayout.removePages(momentsListPage);
+
                             loadingPageActivity.running = false
                         }
                     }

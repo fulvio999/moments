@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Moments
-Exec=qmlscene qml/Main.qml
-Icon=assets/moments.png
-Terminal=false
-Type=Application
-X-Ubuntu-Touch=true

@@ -9,10 +9,11 @@ import Ubuntu.Components.Popups 1.3
 Dialog {
        id: imageZoomDialog
 
-       /* the image to display */
-       property string targetImageName;
+       /* the full path to image to display */
+       property string targetImagePath;
+       property string imageName;
 
-       text: "<b>"+ i18n.tr("Image")+": "+ targetImageName+" ("+i18n.tr("tap to close")+")"
+       text: "<b>"+ i18n.tr("Image")+": "+ imageName+" ("+i18n.tr("tap to close")+")"
        contentHeight : root.height - units.gu(2);
        contentWidth : root.width - units.gu(2);
 
@@ -24,7 +25,7 @@ Dialog {
 
             Image {
                 id: targetImage
-                source: targetImageName
+                source: targetImagePath
                 width: parent.width
                 height: parent.height
                 fillMode: Image.PreserveAspectFit

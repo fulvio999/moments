@@ -173,13 +173,14 @@ MainView {
             /* sourcePath is the folder where contenthub place selected images: /HubIncoming/<id_import> where <id_import> is an id created by contenthub
                to identify the import
             */
-            var sourcePath = getPathFromUrl(url);
+            var sourcePath = getPathFromUrl(url).replace(imageName, "");
             var destinationPath = Fileutils.getHomePath()+"/"+root.imagesSavingRootPath+"/moments/"+root.targetMomentTitle+"/images";
+
             console.log("Image Copy source path: " + sourcePath);
             console.log("Image Copy destination path: " + destinationPath);
 
-            /* copy images in a folder under App confinement */
-            Fileutils.moveImage(sourcePath, destinationPath);
+            /* copy images in a folder under the App confinement */
+            Fileutils.moveImage(sourcePath, destinationPath,imageName);
 
             momentsImagesListModel.append( { imageName: imageName, imagePath: destinationPath, value:i } );
         }

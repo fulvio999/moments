@@ -14,15 +14,18 @@ void Fileutils::speak() {
 }
 
 
-void Fileutils::moveImage(QString source, QString destination)
+void Fileutils::moveImage(QString source, QString destination, QString fileName)
 {
-    //qDebug() << Q_FUNC_INFO << "Copying" << source << "to" << destination;
+    //qDebug() << Q_FUNC_INFO << "Copying moveImage from" << source << "to" << destination;
 
     QDir dir(destination);
     if (!dir.exists())
         dir.mkpath(".");
 
-    QFile::copy(source, destination);
+    const QString srcFilePath = source + QLatin1Char('/') + fileName;
+    const QString destFilePath = destination + QLatin1Char('/') + fileName;
+
+    QFile::copy(srcFilePath, destFilePath);
 }
 
 /*

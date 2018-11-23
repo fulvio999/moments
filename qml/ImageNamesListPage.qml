@@ -30,7 +30,7 @@ Page {
     property string imageListModelIndex;
 
     Component {
-        id: imageZoomtDialogue
+        id: imageZoomDialogue
         ImageZoomDialog{targetImageName:Fileutils.getHomePath()+"/"+root.imagesSavingRootPath+"/moments/"+imageListManagerPage.title+"/images/"+imageListManagerPage.targetImageName}
     }
 

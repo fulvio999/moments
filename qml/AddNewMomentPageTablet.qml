@@ -18,11 +18,7 @@ import "./dialog"
    Add a new Moment TABLET version
 */
 Page {
-    id: addNewMomentPage
-
-    //property list<ContentItem> importItems
-    //property var activeTransfer
-    //signal imported(var fileUrl) //??
+    id: addNewMomentPage  
 
     /* custom signal emitted by OperationResultDialog Componet to notify that user has pressed "Close" button */
     signal operationResultDialogClosed()

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: moments.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-22 17:15+0000\n"
+"POT-Creation-Date: 2018-11-23 11:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/dialog/ImageZoomDialog.qml:15
+#: ../qml/dialog/ImageZoomDialog.qml:16
 msgid "Image"
 msgstr ""
 
-#: ../qml/dialog/ImageZoomDialog.qml:15
+#: ../qml/dialog/ImageZoomDialog.qml:16
 msgid "tap to close"
 msgstr ""
 
@@ -32,20 +32,20 @@ msgid "Remove ALL saved Moments"
 msgstr ""
 
 #: ../qml/dialog/DataBaseEraserDialog.qml:14
-#: ../qml/dialog/MomentDeleteDialog.qml:20
+#: ../qml/dialog/MomentDeleteDialog.qml:23
 msgid "(there is no restore)"
 msgstr ""
 
 #: ../qml/dialog/DataBaseEraserDialog.qml:36
-#: ../qml/dialog/RemoveImageDialog.qml:42
-#: ../qml/dialog/MomentDeleteDialog.qml:42
+#: ../qml/dialog/RemoveImageDialog.qml:40
+#: ../qml/dialog/MomentDeleteDialog.qml:45
 #: ../qml/dialog/AboutProductDialog.qml:16
 #: ../qml/dialog/OperationResultDialog.qml:38
 msgid "Close"
 msgstr ""
 
 #: ../qml/dialog/DataBaseEraserDialog.qml:43
-#: ../qml/dialog/MomentDeleteDialog.qml:56 ../qml/EditMomentPageTablet.qml:57
+#: ../qml/dialog/MomentDeleteDialog.qml:59 ../qml/EditMomentPageTablet.qml:57
 #: ../qml/MomentsListPage.qml:72 ../qml/EditMomentPagePhone.qml:55
 msgid "Delete"
 msgstr ""
@@ -54,24 +54,24 @@ msgstr ""
 msgid "Succesfully Removed ALL moments data"
 msgstr ""
 
-#: ../qml/dialog/RemoveImageDialog.qml:21
+#: ../qml/dialog/RemoveImageDialog.qml:19
 msgid "Remove the Image"
 msgstr ""
 
-#: ../qml/dialog/RemoveImageDialog.qml:48 ../qml/ShowImagesPagePhone.qml:137
+#: ../qml/dialog/RemoveImageDialog.qml:46 ../qml/ShowImagesPagePhone.qml:137
 #: ../qml/ShowImagesPageTablet.qml:138
 msgid "Remove"
 msgstr ""
 
-#: ../qml/dialog/RemoveImageDialog.qml:57
+#: ../qml/dialog/RemoveImageDialog.qml:54
 msgid "Image successfully removed"
 msgstr ""
 
-#: ../qml/dialog/MomentDeleteDialog.qml:20
+#: ../qml/dialog/MomentDeleteDialog.qml:23
 msgid "Remove the Moment"
 msgstr ""
 
-#: ../qml/dialog/MomentDeleteDialog.qml:69
+#: ../qml/dialog/MomentDeleteDialog.qml:73
 msgid "Succesfully removed Moment"
 msgstr ""
 

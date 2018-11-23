@@ -34,12 +34,12 @@ Page {
 
      Component {
          id: imageZoomtDialogue
-         ImageZoomDialog{targetImageName:Fileutils.getHomePath()+"/"+root.imagesSavingRootPath+"/moments/"+showImagesPage.title+"/images/"+showImagesPage.targetImageName}
+         ImageZoomDialog{targetImagePath:Fileutils.getHomePath()+"/"+root.imagesSavingRootPath+"/moments/"+showImagesPage.title+"/images/"+showImagesPage.targetImageName; imageName: showImagesPage.targetImageName}
      }
 
      Component {
          id: removeImageDialog
-         RemoveImageDialog{targetImageName:Fileutils.getHomePath()+"/"+root.imagesSavingRootPath+"/moments/"+showImagesPage.title+"/images/"+showImagesPage.targetImageName; targetMomentId: showImagesPage.id; imageListModelIndex: showImagesPage.imageListModelIndex}
+         RemoveImageDialog{targetImagePath:Fileutils.getHomePath()+"/"+root.imagesSavingRootPath+"/moments/"+showImagesPage.title+"/images/"+showImagesPage.targetImageName; imageListModelIndex: showImagesPage.imageListModelIndex}
      }
 
      /* fill model with the images associated with the moment */

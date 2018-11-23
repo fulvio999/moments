@@ -18,7 +18,7 @@ public:
    /* IMPORTANT: Without Q_INVOKABLE as prefix, the method is NOT exposed to QML (ie: is non invokable) causing error like:
       TypeError: Property <metho-name> of object <pluginName>(0x284d8d0) is not a function
    */
-   Q_INVOKABLE void moveImage(QString source, QString destination);  
+   Q_INVOKABLE void moveImage(QString source, QString destination, QString fileName);  
    Q_INVOKABLE void removeImage(QString source);
    Q_INVOKABLE QStringList getMomentImages(QString path);
    Q_INVOKABLE void deleteMomentFolder(QString path);

@@ -20,10 +20,6 @@ import "./dialog"
 Page {
     id: addNewMomentPage
 
-    //property list<ContentItem> importItems
-    //property var activeTransfer
-    //signal imported(var fileUrl) //used ?
-
     /* custom signal emitted by OperationResultDialog Componet to notify that user has pressed "Close" button */
     signal operationResultDialogClosed()
 
