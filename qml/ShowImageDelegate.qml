@@ -34,6 +34,7 @@ Item {
                           /* to reduce the amount of image pixel sored, to improve performance on load, NOT the scale of the image */
                           sourceSize.width: 1024
                           sourceSize.height: 1024
+                          asynchronous: true
                     }
 
                     MouseArea {
