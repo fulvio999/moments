@@ -60,7 +60,6 @@ Dialog {
                         width: units.gu(12)
                         color: UbuntuColors.red
                         onClicked: {
-                            loadingPageActivity.running = true
 
                             var momentFolder = Fileutils.getHomePath()+"/"+root.imagesSavingRootPath+"/moments/"+momentDeleteDialog.momentTitle;
                             console.log("Deleting moment with id:"+momentId+ " with folder: "+momentFolder);
@@ -71,9 +70,7 @@ Dialog {
                             Storage.getAllMomentsAndFillModel();
 
                             deleteOperationResult.text = i18n.tr("Succesfully removed Moment")
-                            closeButton.enabled = true
-
-                            loadingPageActivity.running = false
+                            closeButton.enabled = true                            
                         }
                     }
                 }

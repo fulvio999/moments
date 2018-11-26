@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: moments.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-26 14:13+0000\n"
+"POT-Creation-Date: 2018-11-26 14:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,7 +50,7 @@ msgstr ""
 msgid "Delete"
 msgstr ""
 
-#: ../qml/dialog/DataBaseEraserDialog.qml:56
+#: ../qml/dialog/DataBaseEraserDialog.qml:55
 msgid "Succesfully Removed ALL moments data"
 msgstr ""
 
@@ -71,7 +71,7 @@ msgstr ""
 msgid "Remove the Moment"
 msgstr ""
 
-#: ../qml/dialog/MomentDeleteDialog.qml:73
+#: ../qml/dialog/MomentDeleteDialog.qml:72
 msgid "Succesfully removed Moment"
 msgstr ""
 

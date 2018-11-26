@@ -104,11 +104,7 @@ MainView {
         id:settings
         /* to create DB table on first use */
         property bool isFirstUse : true;
-    }
-
-    ActivityIndicator {
-        id: loadingPageActivity
-    }
+    }  
 
     Component.onCompleted: {
        if(settings.isFirstUse == true) {

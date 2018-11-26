@@ -44,7 +44,6 @@ Dialog {
                         width: units.gu(12)
                         color: UbuntuColors.red
                         onClicked: {
-                            loadingPageActivity.running = true
 
                             /* delete tables */
                             Storage.cleanAllDatabase();
@@ -59,9 +58,7 @@ Dialog {
                             /* refresh */
                             Storage.getAllMomentsAndFillModel();
                             /* removing primary page only the child pages will be removed */
-                            adaptivePageLayout.removePages(momentsListPage);
-
-                            loadingPageActivity.running = false
+                            adaptivePageLayout.removePages(momentsListPage);                            
                         }
                     }
                 }

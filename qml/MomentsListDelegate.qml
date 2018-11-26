@@ -95,8 +95,6 @@ Component {
                                           editPage = Qt.resolvedUrl("EditMomentPageTablet.qml");
                                       }
 
-                                      loadingPageActivity.running = true
-
                                       adaptivePageLayout.addPageToNextColumn(momentsListPage, editPage,
                                                                              {
                                                                                  /* <page-variable-name>:<property-value from db> */
@@ -112,7 +110,6 @@ Component {
 
                                       /* move the highlight component to the currently selected item */
                                       listView.currentIndex = index
-                                      loadingPageActivity.running = false
                                   }
                             }
                       }
@@ -138,8 +135,6 @@ Component {
                                           showImagesPage = Qt.resolvedUrl("ShowImagesPageTablet.qml");
                                       }
 
-                                      loadingPageActivity.running = true
-
                                       adaptivePageLayout.addPageToNextColumn(momentsListPage, showImagesPage,
                                                                              {
                                                                                  /* <page-variable-name>:<property-value from db> */
@@ -154,8 +149,7 @@ Component {
                                                                              )
 
                                       /* move the highlight component to the currently selected item */
-                                      listView.currentIndex = index
-                                      loadingPageActivity.running = false
+                                      listView.currentIndex = index                                    
                                 }
                             }
                       }
