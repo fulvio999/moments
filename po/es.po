@@ -3,15 +3,12 @@
 # This file is distributed under the same license as the moments.fulvio package.
 # FIRST AUTHOR advocatux <advocatux@airpost.net>, 2018.
 #
-#: ../qml/AddNewMomentPagePhone.qml:41 ../qml/AddNewMomentPagePhone.qml:46
-#: ../qml/AddNewMomentPageTablet.qml:41 ../qml/AddNewMomentPageTablet.qml:46
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: moments.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-22 17:15+0000\n"
-"PO-Revision-Date: 2018-11-22 21:56+0100\n"
+"POT-Creation-Date: 2018-11-23 17:10+0000\n"
+"PO-Revision-Date: 2018-11-23 19:27+0100\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: UBports Spanish Team\n"
 "Language: es\n"
@@ -19,11 +16,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/dialog/ImageZoomDialog.qml:15
+#: ../qml/dialog/ImageZoomDialog.qml:16
 msgid "Image"
 msgstr "Imagen"
 
-#: ../qml/dialog/ImageZoomDialog.qml:15
+#: ../qml/dialog/ImageZoomDialog.qml:16
 msgid "tap to close"
 msgstr "pulsar para cerrar"
 
@@ -32,20 +29,20 @@ msgid "Remove ALL saved Moments"
 msgstr "Eliminar TODOS los momentos guardados"
 
 #: ../qml/dialog/DataBaseEraserDialog.qml:14
-#: ../qml/dialog/MomentDeleteDialog.qml:20
+#: ../qml/dialog/MomentDeleteDialog.qml:23
 msgid "(there is no restore)"
 msgstr "(no se puede recuperar)"
 
 #: ../qml/dialog/DataBaseEraserDialog.qml:36
-#: ../qml/dialog/RemoveImageDialog.qml:42
-#: ../qml/dialog/MomentDeleteDialog.qml:42
+#: ../qml/dialog/RemoveImageDialog.qml:40
+#: ../qml/dialog/MomentDeleteDialog.qml:45
 #: ../qml/dialog/AboutProductDialog.qml:16
 #: ../qml/dialog/OperationResultDialog.qml:38
 msgid "Close"
 msgstr "Cerrar"
 
 #: ../qml/dialog/DataBaseEraserDialog.qml:43
-#: ../qml/dialog/MomentDeleteDialog.qml:56 ../qml/EditMomentPageTablet.qml:57
+#: ../qml/dialog/MomentDeleteDialog.qml:59 ../qml/EditMomentPageTablet.qml:57
 #: ../qml/MomentsListPage.qml:72 ../qml/EditMomentPagePhone.qml:55
 msgid "Delete"
 msgstr "Borrar"
@@ -54,24 +51,24 @@ msgstr "Borrar"
 msgid "Succesfully Removed ALL moments data"
 msgstr "Eliminados correctamente TODOS los momentos"
 
-#: ../qml/dialog/RemoveImageDialog.qml:21
+#: ../qml/dialog/RemoveImageDialog.qml:19
 msgid "Remove the Image"
 msgstr "Eliminar la imagen"
 
-#: ../qml/dialog/RemoveImageDialog.qml:48 ../qml/ShowImagesPagePhone.qml:137
+#: ../qml/dialog/RemoveImageDialog.qml:46 ../qml/ShowImagesPagePhone.qml:137
 #: ../qml/ShowImagesPageTablet.qml:138
 msgid "Remove"
 msgstr "Eliminar"
 
-#: ../qml/dialog/RemoveImageDialog.qml:57
+#: ../qml/dialog/RemoveImageDialog.qml:54
 msgid "Image successfully removed"
 msgstr "Eliminada correctamente la imagen"
 
-#: ../qml/dialog/MomentDeleteDialog.qml:20
+#: ../qml/dialog/MomentDeleteDialog.qml:23
 msgid "Remove the Moment"
 msgstr "Eliminar el momento"
 
-#: ../qml/dialog/MomentDeleteDialog.qml:69
+#: ../qml/dialog/MomentDeleteDialog.qml:73
 msgid "Succesfully removed Moment"
 msgstr "Eliminado correctamente el momento"
 
@@ -126,84 +123,92 @@ msgstr "(Ejemplo: matrimonio, vacaciones, fiesta)."
 
 #: ../qml/HelpPage.qml:49
 msgid ""
-"Note: the images used must be placed on the local device, not on remote "
+"Note: the images imported must be placed on the local device, not on remote "
 "sources"
 msgstr ""
-"Nota: las imágenes deben estar en el dispositivo, no en "
+"Nota: las imágenes importadas deben guardarse en el dispositivo, no en "
 "alguna fuente externa"
 
-#: ../qml/AddNewMomentPagePhone.qml:31 ../qml/AddNewMomentPageTablet.qml:31
+#: ../qml/HelpPage.qml:50
+msgid ""
+"When an image is deleted, is removed the one managed by the App, NOT other "
+"copy in the device filesystem (if any)"
+msgstr ""
+"Cuando se borra una imagen, se elimina la gestionada por esta aplicación, NO "
+"la otra copia que pueda haber en el dispositivo"
+
+#: ../qml/AddNewMomentPagePhone.qml:27 ../qml/AddNewMomentPageTablet.qml:27
 msgid "Add new moment"
 msgstr "Añadir nuevo momento"
 
-#: ../qml/AddNewMomentPagePhone.qml:41 ../qml/AddNewMomentPageTablet.qml:41
+#: ../qml/AddNewMomentPagePhone.qml:37 ../qml/AddNewMomentPageTablet.qml:37
 msgid "Invalid Title (empty or invalid characters)"
 msgstr "Título nulo (vacío o caracteres no válidos)"
 
-#: ../qml/AddNewMomentPagePhone.qml:46 ../qml/AddNewMomentPageTablet.qml:46
+#: ../qml/AddNewMomentPagePhone.qml:42 ../qml/AddNewMomentPageTablet.qml:42
 msgid "Moment title existing, please change it"
 msgstr "Ya existe el título del momento, cámbielo"
 
-#: ../qml/AddNewMomentPagePhone.qml:51 ../qml/AddNewMomentPageTablet.qml:51
+#: ../qml/AddNewMomentPagePhone.qml:47 ../qml/AddNewMomentPageTablet.qml:47
 #: ../qml/EditMomentPageTablet.qml:68 ../qml/EditMomentPagePhone.qml:66
 msgid "FAILURE"
 msgstr "FALLO"
 
-#: ../qml/AddNewMomentPagePhone.qml:51 ../qml/AddNewMomentPageTablet.qml:51
+#: ../qml/AddNewMomentPagePhone.qml:47 ../qml/AddNewMomentPageTablet.qml:47
 msgid "Error adding new Moment"
 msgstr "Error añadiendo un nuevo momento"
 
-#: ../qml/AddNewMomentPagePhone.qml:56 ../qml/AddNewMomentPageTablet.qml:56
+#: ../qml/AddNewMomentPagePhone.qml:52 ../qml/AddNewMomentPageTablet.qml:52
 #: ../qml/EditMomentPageTablet.qml:73 ../qml/EditMomentPagePhone.qml:71
 msgid "SUCCESS"
 msgstr "ÉXITO"
 
-#: ../qml/AddNewMomentPagePhone.qml:56 ../qml/AddNewMomentPageTablet.qml:56
+#: ../qml/AddNewMomentPagePhone.qml:52 ../qml/AddNewMomentPageTablet.qml:52
 msgid "Moment added successfully"
 msgstr "Momento añadido correctamente"
 
-#: ../qml/AddNewMomentPagePhone.qml:91 ../qml/AddNewMomentPageTablet.qml:91
+#: ../qml/AddNewMomentPagePhone.qml:87 ../qml/AddNewMomentPageTablet.qml:87
 #: ../qml/EditMomentPageTablet.qml:108 ../qml/EditMomentPagePhone.qml:106
 msgid "Title"
 msgstr "Título"
 
-#: ../qml/AddNewMomentPagePhone.qml:111 ../qml/AddNewMomentPageTablet.qml:111
-#: ../qml/EditMomentPageTablet.qml:127 ../qml/EditMomentPagePhone.qml:125
+#: ../qml/AddNewMomentPagePhone.qml:108 ../qml/AddNewMomentPageTablet.qml:108
+#: ../qml/EditMomentPageTablet.qml:128 ../qml/EditMomentPagePhone.qml:126
 msgid "Description"
 msgstr "Descripción"
 
-#: ../qml/AddNewMomentPagePhone.qml:130 ../qml/AddNewMomentPageTablet.qml:130
-#: ../qml/EditMomentPageTablet.qml:147 ../qml/MomentsListDelegate.qml:62
-#: ../qml/EditMomentPagePhone.qml:145
+#: ../qml/AddNewMomentPagePhone.qml:128 ../qml/AddNewMomentPageTablet.qml:128
+#: ../qml/EditMomentPageTablet.qml:149 ../qml/MomentsListDelegate.qml:62
+#: ../qml/EditMomentPagePhone.qml:147
 msgid "Location"
 msgstr "Ubicación"
 
-#: ../qml/AddNewMomentPagePhone.qml:171 ../qml/AddNewMomentPageTablet.qml:171
-#: ../qml/EditMomentPageTablet.qml:187 ../qml/MomentsListDelegate.qml:67
-#: ../qml/EditMomentPagePhone.qml:185
+#: ../qml/AddNewMomentPagePhone.qml:170 ../qml/AddNewMomentPageTablet.qml:170
+#: ../qml/EditMomentPageTablet.qml:190 ../qml/MomentsListDelegate.qml:67
+#: ../qml/EditMomentPagePhone.qml:188
 msgid "Date"
 msgstr "Fecha"
 
-#: ../qml/AddNewMomentPagePhone.qml:192 ../qml/AddNewMomentPageTablet.qml:192
-#: ../qml/EditMomentPageTablet.qml:209 ../qml/EditMomentPagePhone.qml:207
+#: ../qml/AddNewMomentPagePhone.qml:191 ../qml/AddNewMomentPageTablet.qml:191
+#: ../qml/EditMomentPageTablet.qml:212 ../qml/EditMomentPagePhone.qml:210
 msgid "Photos"
 msgstr "Fotos"
 
-#: ../qml/AddNewMomentPagePhone.qml:197 ../qml/AddNewMomentPageTablet.qml:197
+#: ../qml/AddNewMomentPagePhone.qml:196 ../qml/AddNewMomentPageTablet.qml:196
 msgid "Choose"
 msgstr "Elegir"
 
-#: ../qml/AddNewMomentPagePhone.qml:225 ../qml/AddNewMomentPageTablet.qml:226
+#: ../qml/AddNewMomentPagePhone.qml:224 ../qml/AddNewMomentPageTablet.qml:225
 msgid "Tag"
 msgstr "Etiqueta"
 
-#: ../qml/AddNewMomentPagePhone.qml:231 ../qml/AddNewMomentPageTablet.qml:232
-#: ../qml/EditMomentPageTablet.qml:235 ../qml/EditMomentPagePhone.qml:233
+#: ../qml/AddNewMomentPagePhone.qml:230 ../qml/AddNewMomentPageTablet.qml:231
+#: ../qml/EditMomentPageTablet.qml:238 ../qml/EditMomentPagePhone.qml:236
 msgid "comma separated list"
 msgstr "lista separada por comas"
 
 #: ../qml/AddNewMomentPagePhone.qml:272 ../qml/AddNewMomentPageTablet.qml:273
-#: ../qml/EditMomentPageTablet.qml:266 ../qml/EditMomentPagePhone.qml:264
+#: ../qml/EditMomentPageTablet.qml:270 ../qml/EditMomentPagePhone.qml:268
 msgid "Field required"
 msgstr "Campo obligatorio"
 
@@ -231,15 +236,15 @@ msgstr "Error editando momento"
 msgid "Moment edited successfully"
 msgstr "Momento editado correctamente"
 
-#: ../qml/EditMomentPageTablet.qml:214 ../qml/EditMomentPagePhone.qml:212
+#: ../qml/EditMomentPageTablet.qml:217 ../qml/EditMomentPagePhone.qml:215
 msgid "Edit"
 msgstr "Editar"
 
-#: ../qml/EditMomentPageTablet.qml:229 ../qml/EditMomentPagePhone.qml:227
+#: ../qml/EditMomentPageTablet.qml:232 ../qml/EditMomentPagePhone.qml:230
 msgid "Tags"
 msgstr "Etiquetas"
 
-#: ../qml/EditMomentPageTablet.qml:247 ../qml/EditMomentPagePhone.qml:245
+#: ../qml/EditMomentPageTablet.qml:251 ../qml/EditMomentPagePhone.qml:249
 msgid "Update"
 msgstr "Actualizar"
 
@@ -270,4 +275,4 @@ msgstr "Filtrar"
 
 #: ../qml/MomentsListPage.qml:158
 msgid "(filtered)"
-msgstr "(filtrado)" 
+msgstr "(filtrado)"
