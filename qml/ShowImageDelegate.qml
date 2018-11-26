@@ -29,8 +29,11 @@ Item {
                           anchors.verticalCenter: parent.verticalCenter
                           width: parent.width //* 0.8
                           height: parent.height //* 0.8
-                          source: imagePath+"/"+imageName                        
+                          source: imagePath+"/"+imageName
                           fillMode: Image.PreserveAspectCrop
+                          /* to reduce the amount of image pixel sored, to improve performance on load, NOT the scale of the image */
+                          sourceSize.width: 1024
+                          sourceSize.height: 1024
                     }
 
                     MouseArea {
