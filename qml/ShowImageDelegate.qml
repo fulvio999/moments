@@ -32,8 +32,8 @@ Item {
                           source: imagePath+"/"+imageName
                           fillMode: Image.PreserveAspectCrop
                           /* to reduce the amount of image pixel sored, to improve performance on load, NOT the scale of the image */
-                          sourceSize.width: 1024
-                          sourceSize.height: 1024
+                          sourceSize.width: 900
+                          sourceSize.height: 900
                           asynchronous: true
                     }
 

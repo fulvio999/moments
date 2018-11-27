@@ -217,7 +217,10 @@ Page{
                         text: i18n.tr("Edit")+"..."
                         width: units.gu(20)
                         onClicked: {
-                             adaptivePageLayout.addPageToNextColumn(editMomentPage, Qt.resolvedUrl("ImageNamesListPage.qml"), { momentTitle:title })
+                             /* necessary to set the copy destination path for ContentHub */
+                             root.targetMomentTitle = momentTitleField.text
+
+                             adaptivePageLayout.addPageToNextColumn(editMomentPage, Qt.resolvedUrl("ImageNamesListPage.qml"), { momentTitle: editMomentPage.title })
                         }
                  }
              }
