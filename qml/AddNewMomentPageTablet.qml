@@ -208,6 +208,7 @@ Page {
                         }else{
                            /* necessary to set the copy destination path for ContentHub */
                            root.targetMomentTitle = momentTitleField.text
+                           momentsImagesListModel.clear();
                            /* '-1' means that we are adding a new moment (ie: no images are associated yet) */
                            adaptivePageLayout.addPageToNextColumn(addNewMomentPage, Qt.resolvedUrl("ImageNamesListPage.qml"), { momentTitle:'-1' })
                         }
