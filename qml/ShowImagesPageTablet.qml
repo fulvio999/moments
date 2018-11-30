@@ -47,10 +47,10 @@ Page {
      /* filled with the image names/path associated with the moment */
      Component.onCompleted: {
 
-          console.log("showImagesPage loading images for moment with id:"+showImagesPage.id)
+          //console.log("showImagesPage loading images for moment with id:"+showImagesPage.id)
 
           var imagePath = Fileutils.getHomePath()+"/"+root.imagesSavingRootPath+"/moments/"+showImagesPage.title+"/images";
-          console.log("showImagesPage search path is: "+imagePath);
+          console.log("showImagesPage searching under path: "+imagePath);
 
           var fileList = Fileutils.getMomentImages(imagePath);
           momentsImagesListModel.clear();

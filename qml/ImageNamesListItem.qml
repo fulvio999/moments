@@ -40,18 +40,12 @@ ListItem {
            Action {
                iconName: "delete"
                onTriggered: {
-                  // momentPhotoListView.currentIndex = index
-                  imageListManagerPage.imageListModelIndex  = index
+                   imageListManagerPage.imageListModelIndex  = index
                    //var imageToDelete = momentsImagesListModel.get(index).imageName; /* name without path */
                    //var imagePath = Fileutils.getHomePath()+"/"+root.imagesSavingRootPath+"/moments/"+imageListManagerPage.id+"/images/"+imageToDelete;
 
-
                    PopupUtils.open(removeImageDialog)
 
-
-                   //console.log("Removing image: "+imagePath);
-                   //Fileutils.removeImage(imagePath);
-                   //momentsImagesListModel.remove(index);
                }
            }
         ]

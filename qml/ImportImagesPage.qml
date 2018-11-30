@@ -50,7 +50,7 @@ Page {
            }
 
            onCancelPressed: {
-               console.log("Cancel pressed, no transfer to perform");
+               //console.log("Cancel pressed, no transfer to perform");
                /* user has presseed 'undo' no transfer to perform, just come back to previous page */
                adaptivePageLayout.removePages(importMomentPage);
            }

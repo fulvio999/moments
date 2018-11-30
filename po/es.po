@@ -7,14 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: moments.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-23 17:10+0000\n"
-"PO-Revision-Date: 2018-11-23 19:27+0100\n"
+"POT-Creation-Date: 2018-11-30 13:16+0000\n"
+"PO-Revision-Date: 2018-11-30 14:45+0100\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: UBports Spanish Team\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: ../qml/dialog/ImageZoomDialog.qml:16
 msgid "Image"
@@ -47,7 +48,7 @@ msgstr "Cerrar"
 msgid "Delete"
 msgstr "Borrar"
 
-#: ../qml/dialog/DataBaseEraserDialog.qml:56
+#: ../qml/dialog/DataBaseEraserDialog.qml:55
 msgid "Succesfully Removed ALL moments data"
 msgstr "Eliminados correctamente TODOS los momentos"
 
@@ -55,8 +56,8 @@ msgstr "Eliminados correctamente TODOS los momentos"
 msgid "Remove the Image"
 msgstr "Eliminar la imagen"
 
-#: ../qml/dialog/RemoveImageDialog.qml:46 ../qml/ShowImagesPagePhone.qml:137
-#: ../qml/ShowImagesPageTablet.qml:138
+#: ../qml/dialog/RemoveImageDialog.qml:46 ../qml/ShowImagesPagePhone.qml:127
+#: ../qml/ShowImagesPageTablet.qml:126
 msgid "Remove"
 msgstr "Eliminar"
 
@@ -68,7 +69,7 @@ msgstr "Eliminada correctamente la imagen"
 msgid "Remove the Moment"
 msgstr "Eliminar el momento"
 
-#: ../qml/dialog/MomentDeleteDialog.qml:73
+#: ../qml/dialog/MomentDeleteDialog.qml:72
 msgid "Succesfully removed Moment"
 msgstr "Eliminado correctamente el momento"
 
@@ -92,12 +93,13 @@ msgstr "Reconocimiento: a Mario Guerriero por la idea"
 msgid "Operation Result"
 msgstr "Resultado de la operación"
 
-#: ../qml/ImageNamesListPage.qml:43
+#: ../qml/ImageNamesListPage.qml:43 ../qml/ShowImagesPagePhone.qml:33
+#: ../qml/ShowImagesPageTablet.qml:34
 msgid "Images found"
 msgstr "Imágenes encontradas"
 
-#: ../qml/ImageNamesListPage.qml:48 ../qml/AddNewMomentPagePhone.qml:244
-#: ../qml/AddNewMomentPageTablet.qml:245 ../qml/MomentsListPage.qml:56
+#: ../qml/ImageNamesListPage.qml:48 ../qml/AddNewMomentPagePhone.qml:245
+#: ../qml/AddNewMomentPageTablet.qml:246 ../qml/MomentsListPage.qml:56
 msgid "Add"
 msgstr "Añadir"
 
@@ -111,7 +113,7 @@ msgstr "Página de ayuda"
 
 #: ../qml/HelpPage.qml:47
 msgid ""
-"With Moments you can group your pictures, images by Moments, periods of you "
+"With Moments you can group your pictures, images by Moments, periods of your "
 "life"
 msgstr ""
 "Con «Moments» (momentos) puede agrupar sus fotos e imágenes por momentos, "
@@ -131,8 +133,8 @@ msgstr ""
 
 #: ../qml/HelpPage.qml:50
 msgid ""
-"When an image is deleted, is removed the one managed by the App, NOT other "
-"copy in the device filesystem (if any)"
+"When an image is deleted, is removed the one managed by Moments App, NOT "
+"other copy in the device filesystem (if any)"
 msgstr ""
 "Cuando se borra una imagen, se elimina la gestionada por esta aplicación, NO "
 "la otra copia que pueda haber en el dispositivo"
@@ -198,35 +200,23 @@ msgstr "Fotos"
 msgid "Choose"
 msgstr "Elegir"
 
-#: ../qml/AddNewMomentPagePhone.qml:224 ../qml/AddNewMomentPageTablet.qml:225
+#: ../qml/AddNewMomentPagePhone.qml:225 ../qml/AddNewMomentPageTablet.qml:226
 msgid "Tag"
 msgstr "Etiqueta"
 
-#: ../qml/AddNewMomentPagePhone.qml:230 ../qml/AddNewMomentPageTablet.qml:231
-#: ../qml/EditMomentPageTablet.qml:238 ../qml/EditMomentPagePhone.qml:236
-msgid "comma separated list"
-msgstr "lista separada por comas"
+#: ../qml/AddNewMomentPagePhone.qml:231 ../qml/AddNewMomentPageTablet.qml:232
+#: ../qml/EditMomentPagePhone.qml:239
+msgid "comma or space separated list"
+msgstr "lista separada por comas o espacios"
 
-#: ../qml/AddNewMomentPagePhone.qml:272 ../qml/AddNewMomentPageTablet.qml:273
-#: ../qml/EditMomentPageTablet.qml:270 ../qml/EditMomentPagePhone.qml:268
+#: ../qml/AddNewMomentPagePhone.qml:273 ../qml/AddNewMomentPageTablet.qml:274
+#: ../qml/EditMomentPageTablet.qml:273 ../qml/EditMomentPagePhone.qml:271
 msgid "Field required"
 msgstr "Campo obligatorio"
 
-#: ../qml/ShowImagesPagePhone.qml:32 ../qml/ShowImagesPageTablet.qml:33
-msgid "Images for"
-msgstr "Imágenes para"
-
-#: ../qml/ShowImagesPagePhone.qml:99 ../qml/ShowImagesPageTablet.qml:100
-msgid "Images Found"
-msgstr "Imágenes encontradas"
-
-#: ../qml/ShowImagesPagePhone.qml:126 ../qml/ShowImagesPageTablet.qml:127
+#: ../qml/ShowImagesPagePhone.qml:116 ../qml/ShowImagesPageTablet.qml:115
 msgid "Zoom"
 msgstr "Zoom"
-
-#: ../qml/EditMomentPageTablet.qml:50 ../qml/EditMomentPagePhone.qml:48
-msgid "Edit Moment"
-msgstr "Editar momento"
 
 #: ../qml/EditMomentPageTablet.qml:68 ../qml/EditMomentPagePhone.qml:66
 msgid "Error editing Moment"
@@ -240,11 +230,15 @@ msgstr "Momento editado correctamente"
 msgid "Edit"
 msgstr "Editar"
 
-#: ../qml/EditMomentPageTablet.qml:232 ../qml/EditMomentPagePhone.qml:230
+#: ../qml/EditMomentPageTablet.qml:235 ../qml/EditMomentPagePhone.qml:233
 msgid "Tags"
 msgstr "Etiquetas"
 
-#: ../qml/EditMomentPageTablet.qml:251 ../qml/EditMomentPagePhone.qml:249
+#: ../qml/EditMomentPageTablet.qml:241
+msgid "comma separated list"
+msgstr "lista separada por comas"
+
+#: ../qml/EditMomentPageTablet.qml:254 ../qml/EditMomentPagePhone.qml:252
 msgid "Update"
 msgstr "Actualizar"
 
@@ -276,3 +270,12 @@ msgstr "Filtrar"
 #: ../qml/MomentsListPage.qml:158
 msgid "(filtered)"
 msgstr "(filtrado)"
+
+#~ msgid "Images for"
+#~ msgstr "Imágenes para"
+
+#~ msgid "Images Found"
+#~ msgstr "Imágenes encontradas"
+
+#~ msgid "Edit Moment"
+#~ msgstr "Editar momento"

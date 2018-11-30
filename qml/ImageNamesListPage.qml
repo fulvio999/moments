@@ -80,7 +80,7 @@ Page {
     function getMomentImagesList(momentTitle)
     {
         var imagePath = Fileutils.getHomePath()+"/"+root.imagesSavingRootPath+"/moments/"+momentTitle+"/images/";
-        console.log("Loading images list for Moment from: "+imagePath);
+        //console.log("Loading images list for Moment from: "+imagePath);
         var fileList = Fileutils.getMomentImages(imagePath);
 
         momentsImagesListModel.clear();

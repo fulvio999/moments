@@ -79,8 +79,8 @@ MainView {
     //height: units.gu(111)
 
     //horizontal (rel)
-    //width: units.gu(100)
-    //height: units.gu(75)
+    width: units.gu(100)
+    height: units.gu(75)
 
     //Tablet horizontal
     //width: units.gu(128)
@@ -92,12 +92,12 @@ MainView {
 
     /* ----- phone 4.5 (the smallest one) ---- */
     //vertical
-    width: units.gu(50)
-    height: units.gu(96)
+    //width: units.gu(50)
+    //height: units.gu(96)
 
     //horizontal
-    //width: units.gu(96)
-    //height: units.gu(50)
+    width: units.gu(96)
+    height: units.gu(50)
     /* -------------------------------------- */
 
     Settings {
@@ -161,7 +161,7 @@ MainView {
         for (var i = 0; i < items.length; i++)
         {
             var url = items[i].url
-            console.log("Selected Image full path: " + url);
+            //console.log("Selected Image full path: " + url);
 
             var imageName = getImageNameFromPath(String(url));
             //console.log("imageName: "+imageName);
@@ -193,7 +193,6 @@ MainView {
           momentsImagesListModel.clear();
 
           for(var i=0; i<fileList.length; i++) {
-              console.log("Found file:"+ fileList[i]);
               momentsImagesListModel.append( { imageName: fileList[i], imagePath: imagePath, value:i } );
           }
     }
