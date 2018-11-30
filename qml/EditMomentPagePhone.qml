@@ -45,7 +45,7 @@ Page{
     }
 
     header: PageHeader {
-        title: i18n.tr("Edit Moment") +": <b>"+editMomentPage.title +"</b>"
+        title: "<b>"+editMomentPage.title +"</b>"
 
         /* the bar on the rigth side */
         trailingActionBar.actions: [
@@ -236,7 +236,7 @@ Page{
                  TextField {
                         id: momentTagsField
                         text: editMomentPage.tags
-                        placeholderText: i18n.tr("comma separated list")
+                        placeholderText: i18n.tr("comma or space separated list")
                         echoMode: TextInput.Normal
                         inputMethodHints: Qt.ImhNoPredictiveText | Qt.ImhNoAutoUppercase
                         readOnly: false

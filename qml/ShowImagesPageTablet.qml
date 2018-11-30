@@ -30,7 +30,8 @@ Page {
      property string imageListModelIndex;
 
      header: PageHeader {
-        title: i18n.tr("Images for")+": "+ showImagesPage.title
+        title: showImagesPage.title
+        subtitle:  i18n.tr("Images found")+": "+momentsImagesListModel.count
      }
 
      Component {
@@ -66,60 +67,47 @@ Page {
             showImagesPage.targetMomentId = id;
          }
 
-         console.log("showImagesPage found images:"+ momentsImagesListModel.count);
+         //console.log("showImagesPage Total found images:"+ momentsImagesListModel.count);
      }
 
      /* highlighter Component for selected image */
      Component {
           id: highlightComponent
           Rectangle {
-               width: imageGridView.cellWidth //+ units.gu(1);
-               height: imageGridView.cellHeight //+ units.gu(1);
+               width: imageGridView.cellWidth
+               height: imageGridView.cellHeight
                color: "blue"; radius: 5
                x: imageGridView.currentItem.x
                y: imageGridView.currentItem.y
                Behavior on x { SpringAnimation { spring: 3; damping: 0.2 } }
                Behavior on y { SpringAnimation { spring: 3; damping: 0.2 } }
           }
-     }
+      }
 
-     Column{
+      GridView {
+             id: imageGridView
+             anchors.topMargin: units.gu(10) /* amount of space from the above component */
+             anchors.fill: parent
+             cellWidth: parent.width/5
+             cellHeight: parent.height/5
+             model: momentsImagesListModel
+             delegate: ShowImageDelegate{}
+             highlight: highlightComponent
+             highlightFollowsCurrentItem: false
+             focus: true
+             clip: true
+      }
+
+      Column{
            anchors.fill: parent
-           spacing: units.gu(2)
-
-           /* transparent placeholder */
-           Rectangle {
-                color: "transparent"
-                width: parent.width
-                height: units.gu(6)
-           }
-
-           Row{
-              anchors.horizontalCenter: parent.horizontalCenter
-              Label {
-                  text: i18n.tr("Images Found")+": "+momentsImagesListModel.count
-                  fontSize: "medium"
-              }
-           }
-
-           GridView {
-               id: imageGridView
-               width: parent.width
-               height: parent.height - parent.height/4
-               cellWidth: parent.width/3
-               cellHeight: parent.height/4
-               model: momentsImagesListModel
-               delegate: ShowImageDelegate{}
-               highlight: highlightComponent
-               highlightFollowsCurrentItem: false
-               focus: true
-               clip: true
-           }
+           spacing: units.gu(4)
 
            Row{
                id:commandButtonsRow
                spacing: units.gu(2)
                anchors.horizontalCenter: parent.horizontalCenter
+               anchors.bottom: parent.bottom
+               anchors.margins: units.gu(2)
 
                Button{
                   id: zoomButton
@@ -132,7 +120,7 @@ Page {
                   }
                }
 
-              Button{
+               Button{
                   id: removeButton
                   enabled: false
                   text: i18n.tr("Remove")

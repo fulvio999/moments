@@ -27,13 +27,13 @@ Item {
                           anchors.fill: parent
                           anchors.horizontalCenter: parent.horizontalCenter
                           anchors.verticalCenter: parent.verticalCenter
-                          width: parent.width //* 0.8
-                          height: parent.height //* 0.8
+                          width: parent.width
+                          height: parent.height
                           source: imagePath+"/"+imageName
                           fillMode: Image.PreserveAspectCrop
                           /* to reduce the amount of image pixel sored, to improve performance on load, NOT the scale of the image */
-                          sourceSize.width: 900
-                          sourceSize.height: 900
+                          sourceSize.width: 400
+                          sourceSize.height: 400
                           asynchronous: true
                     }
 

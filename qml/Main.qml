@@ -104,7 +104,7 @@ MainView {
         id:settings
         /* to create DB table on first use */
         property bool isFirstUse : true;
-    }  
+    }
 
     Component.onCompleted: {
        if(settings.isFirstUse == true) {

@@ -24,7 +24,7 @@ Page {
     signal operationResultDialogClosed()
 
     header: PageHeader {
-       title: i18n.tr("Add new moment")
+       title: "<b>"+i18n.tr("Add new moment")+"</b>"
     }
 
     /* callback function for 'operationResultDialogClosed' signal  */
@@ -228,7 +228,7 @@ Page {
                  TextField {
                         id: momentTagsField
                         text: ""
-                        placeholderText: i18n.tr("comma separated list")
+                        placeholderText: i18n.tr("comma or space separated list")
                         echoMode: TextInput.Normal
                         inputMethodHints: Qt.ImhNoPredictiveText | Qt.ImhNoAutoUppercase
                         readOnly: false

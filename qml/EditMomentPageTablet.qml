@@ -47,7 +47,7 @@ Page{
     }
 
     header: PageHeader {
-        title: i18n.tr("Edit Moment") +": <b>"+editMomentPage.title +"</b>"
+        title: "<b>"+editMomentPage.title +"</b>"
 
         /* the bar on the rigth side */
         trailingActionBar.actions: [
