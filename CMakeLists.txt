@@ -35,6 +35,7 @@ execute_process(
 configure_file(manifest.json.in ${CMAKE_CURRENT_BINARY_DIR}/manifest.json)
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/manifest.json DESTINATION ${CMAKE_INSTALL_PREFIX})
 install(FILES ${PROJECT_NAME}.apparmor DESTINATION ${DATA_DIR})
+install(FILES ${PROJECT_NAME}.content-hub DESTINATION ${DATA_DIR})
 install(DIRECTORY qml DESTINATION ${DATA_DIR})
 install(DIRECTORY assets DESTINATION ${DATA_DIR})
 
@@ -72,8 +73,7 @@ file(GLOB_RECURSE PROJECT_SRC_FILES
     *.json
     *.json.in
     *.apparmor
-    *.desktop.in
-    *.content-hub
+    *.desktop.in  
 )
 
 add_custom_target(${PROJECT_NAME}_FILES ALL SOURCES ${PROJECT_SRC_FILES})

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: moments.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-30 14:33+0000\n"
+"POT-Creation-Date: 2018-11-30 15:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -238,7 +238,7 @@ msgstr ""
 msgid "Update"
 msgstr ""
 
-#: ../qml/MomentsListPage.qml:29 moments.desktop.in.h:1
+#: ../qml/MomentsListPage.qml:29
 msgid "Moments"
 msgstr ""
 
@@ -265,4 +265,8 @@ msgstr ""
 
 #: ../qml/MomentsListPage.qml:158
 msgid "(filtered)"
+msgstr ""
+
+#: moments.desktop.in.h:1
+msgid "moments"
 msgstr ""

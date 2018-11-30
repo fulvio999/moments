@@ -1,5 +1,5 @@
 [Desktop Entry]
-_Name=Moments
+_Name=moments
 Exec=qmlscene qml/Main.qml
 Icon=assets/moment.png
 Terminal=false
