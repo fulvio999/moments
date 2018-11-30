@@ -96,8 +96,8 @@ MainView {
     //height: units.gu(96)
 
     //horizontal
-    width: units.gu(96)
-    height: units.gu(50)
+    //width: units.gu(96)
+    //height: units.gu(50)
     /* -------------------------------------- */
 
     Settings {

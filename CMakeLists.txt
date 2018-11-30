@@ -73,6 +73,7 @@ file(GLOB_RECURSE PROJECT_SRC_FILES
     *.json.in
     *.apparmor
     *.desktop.in
+    *.content-hub
 )
 
 add_custom_target(${PROJECT_NAME}_FILES ALL SOURCES ${PROJECT_SRC_FILES})
