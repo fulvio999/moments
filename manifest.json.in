@@ -1,7 +1,7 @@
 {
     "name": "moments.fulvio",
     "description": "remember your life moments with pictures",
-    "architecture": "@CLICK_ARCH@",
+    "architecture": "armhf",
     "title": "moments",
     "hooks": {
         "moments": {
@@ -10,7 +10,7 @@
             "content-hub":"moments.content-hub"
         }
     },
-    "version": "1.0.1",
+    "version": "1.0.2",
     "maintainer": "fulvio <fulvio999@gmail.com>",
     "framework" : "ubuntu-sdk-16.04"
 }
