@@ -29,7 +29,7 @@ MainView {
     anchorToKeyboard: true
 
     applicationName: "moments.fulvio"
-    property string appVersion : "1.0.2"
+    property string appVersion : "1.0.3"
 
     /* application hidden folder where save imported image. (path is fixed due to Appp confinement) */
     property string imagesSavingRootPath: ".local/share/moments.fulvio"
