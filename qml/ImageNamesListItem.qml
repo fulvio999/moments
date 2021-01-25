@@ -40,7 +40,9 @@ ListItem {
            Action {
                iconName: "delete"
                onTriggered: {
-                   imageListManagerPage.imageListModelIndex  = index
+                   momentPhotoListView.currentIndex = index
+                   imageListManagerPage.imageListModelIndex = index
+                   imageListManagerPage.targetImageName = momentsImagesListModel.get(index).imageName
                    //var imageToDelete = momentsImagesListModel.get(index).imageName; /* name without path */
                    //var imagePath = Fileutils.getHomePath()+"/"+root.imagesSavingRootPath+"/moments/"+imageListManagerPage.id+"/images/"+imageToDelete;
 
